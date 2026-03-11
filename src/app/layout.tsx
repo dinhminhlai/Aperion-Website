@@ -26,6 +26,11 @@ export const metadata: Metadata = {
   },
   description:
     "Aperion places high school students inside real professional environments — the Pentagon, World Bank, and embassies — alongside the people doing the work.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

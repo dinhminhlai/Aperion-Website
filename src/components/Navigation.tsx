@@ -235,6 +235,13 @@ export default function Navigation() {
                     >
                       <div className="pl-4 pt-3 flex flex-col gap-3">
                         <Link
+                          href="/programs"
+                          className="text-[15px] text-white/70 hover:text-white transition-colors"
+                          style={{ fontWeight: 500 }}
+                        >
+                          All Programs
+                        </Link>
+                        <Link
                           href="/programs/global-affairs"
                           className="text-[15px] text-white/70 hover:text-white transition-colors"
                         >

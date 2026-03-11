@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv:*)",
+      "Bash(curl:*)",
+      "Bash(grep:*)",
+      "Bash(npm install:*)",
+      "Bash(gh auth:*)",
+      "Bash(brew list:*)",
+      "Bash(brew install:*)"
+    ]
+  }
+}

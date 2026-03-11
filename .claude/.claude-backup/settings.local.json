@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/dinhminhlai/Documents/Aperion/**)",
+      "Bash(mv aperion-website Aperion-Website)"
+    ]
+  }
+}
