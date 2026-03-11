@@ -1,65 +1,348 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import FadeIn, { StaggerContainer, StaggerItem } from "@/components/FadeIn";
+import { motion, useReducedMotion } from "framer-motion";
 
 export default function Home() {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <>
+      {/* Hero */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src="https://images.unsplash.com/photo-1501466044931-62695aada8e9?w=1920&q=80"
+          alt="Washington D.C. aerial view"
+          fill
+          className="object-cover"
           priority
+          sizes="100vw"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+        <div className="absolute inset-0 bg-[#1B2A4A]/45" />
+
+        <div
+          className="relative z-10 text-center px-6 max-w-[800px] py-16"
+          style={{ background: "radial-gradient(ellipse at center, rgba(0,0,0,0.25) 0%, transparent 70%)" }}
+        >
+          <FadeIn onLoad delay={0.2}>
+            <p
+              className="text-[#1A9E96] text-[12px] md:text-[13px] tracking-[0.2em] mb-8"
+              style={{ fontWeight: 500, textShadow: "0 1px 4px rgba(0,0,0,0.5)" }}
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              WASHINGTON D.C. &nbsp;|&nbsp; JUNE 7&ndash;13, 2026
+            </p>
+          </FadeIn>
+
+          <FadeIn onLoad delay={0.4}>
+            <h1
+              className="text-[#FFFFFF] text-[42px] md:text-[72px] leading-[1.05] mb-2"
+              style={{ fontWeight: 300, textShadow: "0 1px 4px rgba(0,0,0,0.5)" }}
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              Your students can name
+              <br />
+              five careers.
+            </h1>
+          </FadeIn>
+
+          <FadeIn onLoad delay={0.6}>
+            <p
+              className="text-[#1A9E96] text-[42px] md:text-[72px] leading-[1.05] mb-8"
+              style={{ fontWeight: 300, textShadow: "0 1px 4px rgba(0,0,0,0.5)" }}
+            >
+              We&rsquo;ll show them five hundred.
+            </p>
+          </FadeIn>
+
+          <FadeIn onLoad delay={0.8}>
+            <p
+              className="text-[16px] md:text-[17px] leading-relaxed max-w-[600px] mx-auto mb-10"
+              style={{ color: "rgba(255,255,255,0.95)", textShadow: "0 1px 4px rgba(0,0,0,0.5)" }}
+            >
+              We place high school students inside real institutions — alongside
+              the professionals doing the work. Not simulations. Not campus
+              visits. The actual rooms where consequential work happens. Students
+              leave with wider horizons, sharper questions, and clarity about
+              what&rsquo;s possible — discovered alongside a peer cohort
+              navigating the same journey.
+            </p>
+          </FadeIn>
+
+          <FadeIn onLoad delay={1.0}>
+            <div className="flex justify-center">
+              <Link
+                href="/programs"
+                className="rounded-full bg-[#1A9E96] px-8 py-3 text-[14px] font-medium text-white hover:bg-[#178a83] transition-colors"
+                style={{ fontWeight: 500 }}
+              >
+                Explore the Program
+              </Link>
+            </div>
+          </FadeIn>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        {/* Scroll indicator */}
+        <motion.div
+          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          animate={prefersReducedMotion ? {} : { y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="opacity-60"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </motion.div>
+      </section>
+
+      {/* Problem Section */}
+      <section className="bg-[#F5F2EB]">
+        <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
+          <div className="w-full h-px bg-[#1A9E96]/30" />
         </div>
-      </main>
-    </div>
+        <div className="py-24 lg:py-32">
+          <div className="mx-auto max-w-[800px] px-6 lg:px-8 text-center">
+            <FadeIn>
+              <blockquote
+                className="text-[24px] md:text-[32px] leading-snug text-[#1A1A1A] italic mb-8"
+                style={{ fontFamily: "var(--font-lora), serif" }}
+              >
+                &ldquo;Most students can name about five careers. Two of them
+                are their parents&rsquo;.&rdquo;
+              </blockquote>
+            </FadeIn>
+            <FadeIn delay={0.15}>
+              <p className="text-[16px] md:text-[17px] text-[#4A4A4A] leading-relaxed mb-8">
+                The rest come from television and social media. From this narrow
+                window, students choose courses, build college applications, and
+                commit to directions that will shape the next decade of their
+                lives. 90% of students want more career exploration. Only 39%
+                have access to any meaningful program at all — and the programs
+                that exist provide information, not experience. Aperion changes
+                the equation.
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <p className="text-[13px] text-[#4A4A4A]/60">
+                Suzy Welch, <em>Becoming You</em> (HarperCollins, 2025) &middot;
+                ECMC Foundation, <em>Question the Quo</em>
+              </p>
+            </FadeIn>
+          </div>
+        </div>
+        <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
+          <div className="w-full h-px bg-[#1A9E96]/30" />
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="bg-[#1B2A4A] py-24 lg:py-32">
+        <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
+          <FadeIn>
+            <p
+              className="text-[#1A9E96] text-[12px] tracking-[0.2em] mb-4"
+              style={{ fontWeight: 500 }}
+            >
+              THE APERION EXPERIENCE
+            </p>
+            <h2
+              className="text-white text-[36px] md:text-[48px] leading-tight mb-16"
+              style={{ fontWeight: 300 }}
+            >
+              Real institutions. Real professionals. Real clarity.
+            </h2>
+          </FadeIn>
+
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+            <StaggerItem>
+              <div>
+                <span
+                  className="text-[#1A9E96] text-[48px] md:text-[56px] block mb-4"
+                  style={{ fontWeight: 300 }}
+                >
+                  01
+                </span>
+                <h3 className="text-white text-[20px] font-semibold mb-3">
+                  Go Inside the Work
+                </h3>
+                <p className="text-white/70 text-[15px] leading-relaxed">
+                  We place students in real professional environments — the rooms
+                  where consequential work actually happens. Not simulations, not
+                  panels. Authentic access to practitioners doing the work, in the
+                  institutions that define their fields.
+                </p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div>
+                <span
+                  className="text-[#1A9E96] text-[48px] md:text-[56px] block mb-4"
+                  style={{ fontWeight: 300 }}
+                >
+                  02
+                </span>
+                <h3 className="text-white text-[20px] font-semibold mb-3">
+                  Leave With Clarity
+                </h3>
+                <p className="text-white/70 text-[15px] leading-relaxed">
+                  Not a career decided — a map expanded. Students leave knowing
+                  what energizes them, what doesn&rsquo;t, and what questions they
+                  want to keep chasing. Discovery and elimination are both
+                  valuable outcomes.
+                </p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div>
+                <span
+                  className="text-[#1A9E96] text-[48px] md:text-[56px] block mb-4"
+                  style={{ fontWeight: 300 }}
+                >
+                  03
+                </span>
+                <h3 className="text-white text-[20px] font-semibold mb-3">
+                  You Don&rsquo;t Go Alone
+                </h3>
+                <p className="text-white/70 text-[15px] leading-relaxed">
+                  Aperion is a teacher-led experience built around the peer
+                  cohort. Your own teacher guides the program — someone who knows
+                  you, your strengths, and your goals. You explore alongside peers
+                  in the same season of life, navigating the same uncertainty and
+                  asking the same big questions. Shared discovery makes the
+                  experience social, not solitary.
+                </p>
+              </div>
+            </StaggerItem>
+          </StaggerContainer>
+        </div>
+      </section>
+
+      {/* Cohort Preview */}
+      <section className="bg-[#F5F2EB] py-24 lg:py-32">
+        <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
+          <FadeIn>
+            <p
+              className="text-[#1A9E96] text-[12px] tracking-[0.2em] mb-4"
+              style={{ fontWeight: 500 }}
+            >
+              GLOBAL AFFAIRS PROGRAM &middot; WASHINGTON D.C.
+            </p>
+            <h2
+              className="text-[#1A1A1A] text-[36px] md:text-[48px] leading-tight mb-4"
+              style={{ fontWeight: 300 }}
+            >
+              Now Taking Applications
+            </h2>
+            <p className="text-[#4A4A4A] text-[16px] mb-16 max-w-[640px]">
+              Our inaugural program explores the world of international affairs
+              through three distinct tracks.
+            </p>
+          </FadeIn>
+
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            {[
+              {
+                color: "#4A6D8C",
+                title: "National Security",
+                desc: "Intelligence, diplomacy, defense policy. For students drawn to how nations protect and project their interests.",
+                href: "/cohorts#national-security",
+              },
+              {
+                color: "#B8913A",
+                title: "International Business",
+                desc: "Global trade, finance, economic development. For students who think in systems and see opportunity across borders.",
+                href: "/cohorts#international-business",
+              },
+              {
+                color: "#5E8C6A",
+                title: "Global Impact",
+                desc: "NGOs, humanitarian work, international development. For students who want their career to move the world forward.",
+                href: "/cohorts#global-impact",
+              },
+            ].map((cohort) => (
+              <StaggerItem key={cohort.title} className="flex">
+                <div className="group flex flex-col bg-white border border-black/[0.08] rounded-lg p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                  <div
+                    className="h-1 w-12 rounded-full mb-6"
+                    style={{ backgroundColor: cohort.color }}
+                  />
+                  <h3
+                    className="text-[#1A1A1A] text-[20px] mb-3"
+                    style={{ fontWeight: 600 }}
+                  >
+                    {cohort.title}
+                  </h3>
+                  <p className="text-[#4A4A4A] text-[15px] leading-relaxed mb-6 flex-grow">
+                    {cohort.desc}
+                  </p>
+                  <Link
+                    href={cohort.href}
+                    className="text-[14px] font-medium transition-colors"
+                    style={{ color: cohort.color, fontWeight: 500 }}
+                  >
+                    Learn More &rarr;
+                  </Link>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
+        </div>
+      </section>
+
+      {/* Social Proof */}
+      <section className="bg-white py-24 lg:py-32">
+        <div className="mx-auto max-w-[800px] px-6 lg:px-8 text-center">
+          <FadeIn>
+            <blockquote
+              className="text-[22px] md:text-[28px] leading-snug text-[#1A1A1A] italic mb-6"
+              style={{ fontFamily: "var(--font-lora), serif" }}
+            >
+              &ldquo;I came in thinking I might want to work in government. I
+              left having met a political risk consultant, a development
+              economist, and a foreign service officer — none of whom I knew
+              existed. That week didn&rsquo;t narrow my options. It multiplied
+              them.&rdquo;
+            </blockquote>
+            <p className="text-[14px] text-[#4A4A4A]/60">
+              — Program Participant, Aperion Global Affairs &middot; Washington
+              D.C.
+            </p>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="bg-[#1B2A4A] py-24 lg:py-32">
+        <div className="mx-auto max-w-[800px] px-6 lg:px-8 text-center">
+          <FadeIn>
+            <h2
+              className="text-white text-[36px] md:text-[48px] leading-tight mb-4"
+              style={{ fontWeight: 300 }}
+            >
+              The pilot cohort is now open.
+            </h2>
+            <p className="text-white/70 text-[16px] mb-10">
+              Washington D.C. | June 7&ndash;13, 2026 | Limited enrollment
+            </p>
+            <Link
+              href="/apply"
+              className="inline-block rounded-full bg-[#1A9E96] px-10 py-4 text-[15px] font-medium text-white hover:bg-[#178a83] transition-colors"
+              style={{ fontWeight: 500 }}
+            >
+              Apply Now &rarr;
+            </Link>
+          </FadeIn>
+        </div>
+      </section>
+    </>
   );
 }
