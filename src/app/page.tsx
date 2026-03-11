@@ -234,7 +234,7 @@ export default function Home() {
               className="text-[#1A9E96] text-[12px] tracking-[0.2em] mb-4"
               style={{ fontWeight: 500 }}
             >
-              GLOBAL AFFAIRS PROGRAM &middot; WASHINGTON D.C.
+              APERION | GLOBAL AFFAIRS &middot; WASHINGTON D.C.
             </p>
             <h2
               className="text-[#1A1A1A] text-[36px] md:text-[48px] leading-tight mb-4"
@@ -254,19 +254,19 @@ export default function Home() {
                 color: "#4A6D8C",
                 title: "National Security",
                 desc: "Intelligence, diplomacy, defense policy. For students drawn to how nations protect and project their interests.",
-                href: "/cohorts#national-security",
+                href: "/programs/global-affairs#national-security",
               },
               {
                 color: "#B8913A",
                 title: "International Business",
                 desc: "Global trade, finance, economic development. For students who think in systems and see opportunity across borders.",
-                href: "/cohorts#international-business",
+                href: "/programs/global-affairs#international-business",
               },
               {
                 color: "#5E8C6A",
                 title: "Global Impact",
                 desc: "NGOs, humanitarian work, international development. For students who want their career to move the world forward.",
-                href: "/cohorts#global-impact",
+                href: "/programs/global-affairs#global-impact",
               },
             ].map((cohort) => (
               <StaggerItem key={cohort.title} className="flex">
@@ -299,7 +299,7 @@ export default function Home() {
       </section>
 
       {/* Social Proof */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-[#F5F2EB] py-24 lg:py-32">
         <div className="mx-auto max-w-[800px] px-6 lg:px-8 text-center">
           <FadeIn>
             <blockquote

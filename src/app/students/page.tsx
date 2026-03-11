@@ -381,7 +381,7 @@ export default function StudentsPage() {
       </section>
 
       {/* The Current Program */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-[#F5F2EB] py-24 lg:py-32">
         <div className="mx-auto max-w-[800px] px-6 lg:px-8 text-center">
           <FadeIn>
             <p

@@ -441,7 +441,7 @@ export default function ProgramsPage() {
       </section>
 
       {/* Current & Future Programs */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-[#F5F2EB] py-24 lg:py-32">
         <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
           <FadeIn>
             <p

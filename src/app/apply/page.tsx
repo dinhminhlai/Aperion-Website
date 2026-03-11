@@ -370,7 +370,7 @@ export default function ApplyPage() {
                   </p>
                   <p className="text-[#4A4A4A] text-[14px] leading-relaxed mt-2">
                     Questions?{" "}
-                    <span className="text-[#1A9E96]">aperion.co</span>
+                    <span className="text-[#1A9E96]">aperionhq.com</span>
                   </p>
                 </div>
               </div>
@@ -380,7 +380,7 @@ export default function ApplyPage() {
       </section>
 
       {/* Reassurance Strip */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-[#F5F2EB] py-16 lg:py-20">
         <div className="mx-auto max-w-[900px] px-6 lg:px-8">
           <FadeIn>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">

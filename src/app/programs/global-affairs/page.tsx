@@ -33,6 +33,7 @@ const ecosystem = [
 
 const tracks = [
   {
+    id: "national-security",
     label: "TRACK A",
     color: "#4A6D8C",
     name: "National Security & Defense Policy",
@@ -47,6 +48,7 @@ const tracks = [
     meet: "The Pentagon · CSIS · NSC · Atlantic Council · Political risk consultancies",
   },
   {
+    id: "international-business",
     label: "TRACK B",
     color: "#B8913A",
     name: "International Business & Trade",
@@ -61,6 +63,7 @@ const tracks = [
     meet: "U.S. Chamber of Commerce · World Bank · IMF · Eurasia Group · International Trade Administration",
   },
   {
+    id: "global-impact",
     label: "TRACK C",
     color: "#5E8C6A",
     name: "Global Impact & Development",
@@ -339,7 +342,8 @@ export default function GlobalAffairsPage() {
             {tracks.map((track) => (
               <StaggerItem key={track.label}>
                 <div
-                  className="bg-white border border-black/[0.08] rounded-lg p-8 lg:p-10"
+                  id={track.id}
+                  className="bg-white border border-black/[0.08] rounded-lg p-8 lg:p-10 scroll-mt-24"
                   style={{ borderLeftWidth: "8px", borderLeftColor: track.color }}
                 >
                   <p
@@ -627,7 +631,7 @@ export default function GlobalAffairsPage() {
       </section>
 
       {/* Safety */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-[#F5F2EB] py-24 lg:py-32">
         <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
           <FadeIn>
             <p

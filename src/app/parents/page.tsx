@@ -18,7 +18,7 @@ const accordionItems = [
   {
     title: "What\u2019s the actual value here?",
     content: [
-      "The return on a $4,500 program isn\u2019t a career decided \u2014 it\u2019s a student who arrives at the next set of decisions better equipped to make them.",
+      "The return on an approximately $4,500 program isn\u2019t a career decided \u2014 it\u2019s a student who arrives at the next set of decisions better equipped to make them.",
       "Aperion accelerates clarity. Students leave with a stronger sense of what energizes them, what questions they want to keep chasing, and what they can confidently set aside. That clarity informs the choices that follow: which courses to take, which extracurriculars are worth investing in, how to frame a college application around something genuine. Not because the program handed them a direction \u2014 but because they built a real experiential foundation to reason from.",
       "The flexibility stays intact. Students who return from Aperion aren\u2019t locked in \u2014 they\u2019re better positioned to keep exploring from a place of informed curiosity rather than guesswork. Discovery doesn\u2019t stop after one week. But a week like this gives it traction.",
       "Compare the alternative: a student who arrives at college with no meaningful exposure to the professional world, changes direction twice, and spends years recovering time and tuition that better information could have saved. Aperion is the investment that sharpens the decisions downstream \u2014 while leaving room for the journey to continue.",
@@ -255,7 +255,7 @@ export default function ParentsPage() {
       </section>
 
       {/* What Aperion Actually Is */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-[#F5F2EB] py-24 lg:py-32">
         <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
           <FadeIn>
             <p
@@ -392,7 +392,7 @@ export default function ParentsPage() {
       </section>
 
       {/* Safety */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-[#F5F2EB] py-24 lg:py-32">
         <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
           <FadeIn>
             <p
@@ -584,7 +584,7 @@ export default function ParentsPage() {
       </section>
 
       {/* The Current Program */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-[#F5F2EB] py-24 lg:py-32">
         <div className="mx-auto max-w-[800px] px-6 lg:px-8 text-center">
           <FadeIn>
             <p

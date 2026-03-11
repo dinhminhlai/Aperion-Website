@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "For Students | Aperion",
+  title: "For Students",
   description:
     "Aperion places high school students inside real institutions alongside real professionals — at the exact moment they're making decisions about courses, colleges, and futures. See it to become it.",
 };

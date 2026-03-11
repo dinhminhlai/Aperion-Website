@@ -80,7 +80,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li className="text-[14px] text-white/70">Austin, Texas</li>
-              <li className="text-[14px] text-white/70">hello@aperionlearning.com</li>
+              <li className="text-[14px] text-white/70">hello@aperionhq.com</li>
             </ul>
           </div>
         </div>
