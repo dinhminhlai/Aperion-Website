@@ -208,12 +208,19 @@ export default function Navigation() {
             <div className="px-6 py-8 flex flex-col gap-6">
               {/* Programs with sub-items */}
               <div>
-                <button
-                  onClick={() => setMobilePrograms(!mobilePrograms)}
-                  className="text-[16px] font-medium text-white/90 hover:text-white transition-colors flex items-center gap-2"
+                <div className="flex items-center gap-2">
+                <Link
+                  href="/programs"
+                  className="text-[16px] font-medium text-white/90 hover:text-white transition-colors"
                   style={{ fontWeight: 500 }}
                 >
                   Programs
+                </Link>
+                <button
+                  onClick={() => setMobilePrograms(!mobilePrograms)}
+                  className="text-white/90 hover:text-white transition-colors p-1"
+                  aria-label="Toggle programs submenu"
+                >
                   <svg
                     width="10"
                     height="6"
@@ -224,6 +231,7 @@ export default function Navigation() {
                     <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </button>
+                </div>
                 <AnimatePresence>
                   {mobilePrograms && (
                     <motion.div
@@ -234,13 +242,6 @@ export default function Navigation() {
                       className="overflow-hidden"
                     >
                       <div className="pl-4 pt-3 flex flex-col gap-3">
-                        <Link
-                          href="/programs"
-                          className="text-[15px] text-white/70 hover:text-white transition-colors"
-                          style={{ fontWeight: 500 }}
-                        >
-                          All Programs
-                        </Link>
                         <Link
                           href="/programs/global-affairs"
                           className="text-[15px] text-white/70 hover:text-white transition-colors"
