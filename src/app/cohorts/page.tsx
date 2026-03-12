@@ -81,7 +81,7 @@ export default function CohortsPage() {
         <section
           key={cohort.id}
           id={cohort.id}
-          className={`py-24 lg:py-32 ${i % 2 === 0 ? "bg-[#F5F2EB]" : "bg-white"}`}
+          className="py-24 lg:py-32 bg-[#F5F2EB]"
         >
           <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
