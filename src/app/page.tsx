@@ -75,7 +75,7 @@ export default function Home() {
                 className="rounded-full bg-[#1A9E96] px-8 py-3 text-[14px] font-medium text-white hover:bg-[#178a83] transition-colors"
                 style={{ fontWeight: 500 }}
               >
-                Explore the Program
+                See How It Works
               </Link>
             </div>
           </FadeIn>
@@ -242,6 +242,13 @@ export default function Home() {
             >
               The Inaugural Program
             </h2>
+            <Link
+              href="/programs/global-affairs"
+              className="rounded-full bg-[#1A9E96] px-8 py-3 text-[14px] font-medium text-white hover:bg-[#178a83] transition-colors mb-6 inline-block"
+              style={{ fontWeight: 500 }}
+            >
+              Explore the Washington D.C. Program →
+            </Link>
             <p className="text-[#4A4A4A] text-[16px] mb-16 max-w-[640px]">
               Our inaugural program explores the world of international affairs
               through three distinct tracks.
