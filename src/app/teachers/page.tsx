@@ -194,9 +194,8 @@ export default function TeachersPage() {
             >
               Most teachers entered the profession to make a difference. Many
               find that the classroom walls limit how far that influence can
-              reach. Aperion is built for teachers who want to extend their
-              impact beyond those walls — and give students access to
-              institutions and careers the system alone can&rsquo;t provide.
+              reach. Aperion is the bigger stage — real institutions, real
+              professionals, and your students in the room with them.
             </p>
           </FadeIn>
 

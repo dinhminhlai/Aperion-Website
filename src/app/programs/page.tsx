@@ -262,7 +262,7 @@ export default function ProgramsPage() {
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {competitors.map((comp) => (
               <StaggerItem key={comp.name} className="flex">
-                <div className="bg-white border border-black/[0.08] rounded-lg p-8 lg:p-10 h-full">
+                <div className="bg-white border border-black/[0.08] rounded-lg p-8 lg:p-10 h-full border-t-[4px] border-t-[#1A9E96]">
                   <p
                     className="text-[#4A4A4A] text-[11px] tracking-[0.12em] uppercase mb-3"
                     style={{ fontWeight: 500 }}
@@ -386,7 +386,7 @@ export default function ProgramsPage() {
           {/* Two archetype cards */}
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
             <StaggerItem>
-              <div className="bg-white border border-black/[0.08] rounded-lg p-8 lg:p-10 h-full">
+              <div className="bg-white border border-black/[0.08] rounded-lg p-8 lg:p-10 h-full border-l-[4px] border-l-[#1A9E96]">
                 <h3
                   className="text-[#1A1A1A] text-[18px] mb-4"
                   style={{ fontWeight: 600 }}
@@ -403,7 +403,7 @@ export default function ProgramsPage() {
               </div>
             </StaggerItem>
             <StaggerItem>
-              <div className="bg-white border border-black/[0.08] rounded-lg p-8 lg:p-10 h-full">
+              <div className="bg-white border border-black/[0.08] rounded-lg p-8 lg:p-10 h-full border-l-[4px] border-l-[#1A9E96]">
                 <h3
                   className="text-[#1A1A1A] text-[18px] mb-4"
                   style={{ fontWeight: 600 }}
@@ -560,7 +560,7 @@ export default function ProgramsPage() {
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {futurePrograms.map((prog) => (
               <StaggerItem key={prog.name} className="flex">
-                <div className="bg-white border border-black/[0.08] rounded-lg p-8 lg:p-10 opacity-70 flex flex-col h-full" style={{ filter: "grayscale(20%)" }}>
+                <div className="bg-white border border-black/[0.08] rounded-lg p-8 lg:p-10 opacity-70 flex flex-col h-full border-t-[4px] border-t-[#1A9E96]" style={{ filter: "grayscale(20%)" }}>
                   <div className="flex flex-wrap items-center gap-3 mb-4">
                     <span
                       className="text-[11px] px-3 py-1 rounded-full"
