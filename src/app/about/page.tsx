@@ -289,7 +289,10 @@ export default function AboutPage() {
                 building something new alongside it — a private-sector
                 complement that provides the immersive, practitioner-led,
                 place-based career exposure that schools cannot replicate with
-                existing resources. Teacher-led, because teachers are the only
+                existing resources.
+              </p>
+              <p className="text-white/80 text-[16px]">
+                Teacher-led, because teachers are the only
                 adults who know students deeply enough to guide career
                 exploration with real impact — and because so many teachers
                 entered the profession precisely to change lives, only to find
@@ -330,22 +333,20 @@ export default function AboutPage() {
               className="text-[#1A1A1A] text-[36px] md:text-[48px] leading-tight mb-10"
               style={{ fontWeight: 300 }}
             >
-              Wendy Kopp built Teach For America from a Princeton thesis. Sal
-              Khan built Khan Academy from a closet.
+              Every generation of students deserves a system that matches the
+              complexity of the world they&rsquo;re entering.
             </h2>
           </FadeIn>
 
           <FadeIn delay={0.15}>
             <div className="space-y-6 text-left" style={{ lineHeight: 1.8 }}>
               <p className="text-[#4A4A4A] text-[16px]">
-                Both started from the conviction that a real problem had a real
-                solution — if someone would build the infrastructure to make it
-                possible. Aperion starts from a similar conviction: that the
-                career exposure crisis in American high schools isn&rsquo;t a
-                student problem. It&rsquo;s a systems problem. Students
-                don&rsquo;t lack ambition, intelligence, or drive. They lack
-                access to the careers, professionals, and environments that
-                would transform how they see their futures.
+                Aperion starts from a conviction: the career exposure gap in
+                American high schools isn&rsquo;t a student problem. It&rsquo;s
+                a systems problem. Students don&rsquo;t lack ambition,
+                intelligence, or drive. They lack access to the careers,
+                professionals, and environments that would transform how they
+                see their futures.
               </p>
               <p className="text-[#4A4A4A] text-[16px]">
                 Kerri knows this because she spent her career inside the systems
@@ -429,10 +430,9 @@ export default function AboutPage() {
               style={{ fontWeight: 300, lineHeight: 1.8 }}
             >
               From the Latin <em>aperio</em>: to open, to reveal, to uncover.
-              That&rsquo;s what this company does. We open doors students
-              didn&rsquo;t know existed — delivering career inspiration through
-              immersive, real-world experiences with professionals who show them
-              what&rsquo;s possible.
+              We open doors students didn&rsquo;t know existed — placing them
+              inside real institutions, alongside real professionals, in the
+              cities where careers happen.
             </p>
           </FadeIn>
         </div>

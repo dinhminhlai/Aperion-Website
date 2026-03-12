@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import FadeIn, { StaggerContainer, StaggerItem } from "@/components/FadeIn";
 
@@ -39,7 +40,7 @@ const competitors = [
   {
     name: "All Existing Programs Combined",
     verdict: "Information informs. It rarely ignites.",
-    desc: "A student can read about a career, watch a documentary, or sit through a panel. None of it creates the moment of discovery that changes how a student sees what\u2019s possible. Inspiration requires presence. Every existing program stops short of that. Aperion starts there.",
+    desc: "A student can read about a career, watch a documentary, or sit through a panel. None of it creates the moment of discovery that changes how a student sees what\u2019s possible. Inspiration requires presence. Existing programs provide valuable information \u2014 but stop short of the moment that changes a student\u2019s trajectory. Aperion picks up where they leave off.",
   },
 ];
 
@@ -92,36 +93,76 @@ const valueProps = [
   },
 ];
 
-const futurePills = [
-  "Global Finance & Development · New York",
-  "Healthcare Innovation · Boston",
-  "Climate & Sustainability · Multiple Cities",
-  "More to come",
+const futurePrograms = [
+  {
+    name: "Technology & Entrepreneurship",
+    city: "San Francisco",
+    desc: "AI ethics, venture capital, climate technology, and the infrastructure of the innovation economy. Built for students drawn to the intersection of technology and its consequences.",
+  },
+  {
+    name: "Global Finance & Development",
+    city: "New York",
+    desc: "International banking, impact investing, multilateral development, and fintech \u2014 where capital meets global policy. Wall Street, the UN, and the world\u2019s leading foundations in one city.",
+  },
+  {
+    name: "Energy & AI Infrastructure",
+    city: "Houston",
+    desc: "The AI revolution runs on power. Grid modernization, data center engineering, energy transition, and the CHIPS Act buildout \u2014 the careers behind the technology reshaping every industry.",
+  },
+  {
+    name: "Biotech & Health Innovation",
+    city: "Boston",
+    desc: "Where breakthroughs become treatments. Biotech startups, health policy, FDA regulatory science, and digital health \u2014 the non-clinical careers driving medicine forward.",
+  },
+  {
+    name: "Space & Aerospace",
+    city: "Los Angeles",
+    desc: "From JPL to commercial launch. Satellite systems, defense space, orbital logistics, and the commercial space economy \u2014 careers most students don\u2019t know exist.",
+  },
+  {
+    name: "Climate & Sustainability",
+    city: "Denver",
+    desc: "The green transition needs professionals. Renewable energy engineering, climate policy, carbon markets, and sustainable infrastructure \u2014 anchored at NREL and Colorado\u2019s climate tech corridor.",
+  },
 ];
 
 export default function ProgramsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1B2A4A] pt-32 pb-24 lg:pt-40 lg:pb-32">
-        <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
-          <FadeIn onLoad>
+      <section className="relative h-screen flex items-center overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?w=1920&q=80"
+          alt="Chicago skyline"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-[#1B2A4A]/45" />
+
+        <div className="relative z-10 mx-auto max-w-[1200px] px-6 lg:px-8 w-full">
+          <FadeIn onLoad delay={0.2}>
             <p
-              className="text-[#1A9E96] text-[12px] tracking-[0.2em] mb-6"
-              style={{ fontWeight: 500 }}
+              className="text-[#1A9E96] text-[12px] md:text-[13px] tracking-[0.2em] mb-6"
+              style={{ fontWeight: 500, textShadow: "0 1px 4px rgba(0,0,0,0.4)" }}
             >
               APERION PROGRAMS
             </p>
             <h1
               className="text-white text-[42px] md:text-[64px] leading-[1.05] mb-6 max-w-[700px]"
-              style={{ fontWeight: 300 }}
+              style={{ fontWeight: 300, textShadow: "0 2px 8px rgba(0,0,0,0.3)" }}
             >
               The careers that will define their lives are ones they&rsquo;ve never heard of.
             </h1>
-            <p className="text-white/70 text-[17px] leading-relaxed max-w-[640px]">
-              Aperion builds immersive career discovery programs in the cities
-              where consequential work happens — placing students inside real
-              institutions, alongside the professionals doing it.
+            <p
+              className="text-white/70 text-[17px] leading-relaxed max-w-[640px]"
+              style={{ textShadow: "0 1px 4px rgba(0,0,0,0.3)" }}
+            >
+              Aperion places high school students inside real professional
+              institutions — alongside the practitioners doing the work, in
+              the cities where careers cluster. Not software. Not simulations.
+              Physical presence in the rooms where it happens.
             </p>
           </FadeIn>
         </div>
@@ -500,57 +541,54 @@ export default function ProgramsPage() {
             </div>
           </FadeIn>
 
-          {/* Technology & Entrepreneurship — Coming Soon */}
-          <FadeIn delay={0.15} className="mb-16">
-            <div className="bg-white border border-black/[0.08] rounded-lg p-8 lg:p-10 opacity-70" style={{ filter: "grayscale(20%)" }}>
-              <div className="flex flex-wrap items-center gap-3 mb-4">
-                <span
-                  className="text-[11px] px-3 py-1 rounded-full"
-                  style={{
-                    background: "rgba(0,0,0,0.08)",
-                    color: "rgba(0,0,0,0.4)",
-                    fontWeight: 500,
-                  }}
-                >
-                  COMING SOON
-                </span>
-                <span className="text-[13px] text-[#4A4A4A]/60">
-                  San Francisco
-                </span>
-              </div>
-              <h3
-                className="text-[#1A1A1A] text-[24px] md:text-[28px] mb-2"
-                style={{ fontWeight: 600 }}
-              >
-                Aperion | Technology &amp; Entrepreneurship
-              </h3>
-              <p className="text-[#4A4A4A]/60 text-[15px] leading-relaxed max-w-[700px]">
-                AI ethics, venture capital, climate technology, and the
-                infrastructure of the innovation economy. Built for students
-                drawn to the intersection of technology and its consequences.
-              </p>
-            </div>
-          </FadeIn>
-
-          {/* Future expansion */}
-          <FadeIn delay={0.3}>
+          {/* On the Horizon */}
+          <FadeIn delay={0.15}>
             <p
               className="text-[#4A4A4A] text-[16px] mb-5"
               style={{ fontWeight: 500 }}
             >
               On the horizon
             </p>
-            <div className="flex flex-wrap gap-3">
-              {futurePills.map((pill) => (
-                <span
-                  key={pill}
-                  className="text-[13px] text-white/80 bg-[#1B2A4A] px-4 py-2 rounded-full"
-                >
-                  {pill}
-                </span>
-              ))}
-            </div>
+            <p className="text-[#4A4A4A] text-[15px] leading-relaxed mb-8 max-w-[700px]">
+              Each program targets career fields with high workforce demand, no
+              traditional school pathway, and deep geographic clustering —
+              ensuring students meet the people and institutions actually doing
+              the work.
+            </p>
           </FadeIn>
+
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {futurePrograms.map((prog) => (
+              <StaggerItem key={prog.name} className="flex">
+                <div className="bg-white border border-black/[0.08] rounded-lg p-8 lg:p-10 opacity-70 flex flex-col h-full" style={{ filter: "grayscale(20%)" }}>
+                  <div className="flex flex-wrap items-center gap-3 mb-4">
+                    <span
+                      className="text-[11px] px-3 py-1 rounded-full"
+                      style={{
+                        background: "rgba(0,0,0,0.08)",
+                        color: "rgba(0,0,0,0.4)",
+                        fontWeight: 500,
+                      }}
+                    >
+                      IN DEVELOPMENT
+                    </span>
+                    <span className="text-[13px] text-[#4A4A4A]/60">
+                      {prog.city}
+                    </span>
+                  </div>
+                  <h3
+                    className="text-[#1A1A1A] text-[18px] mb-2"
+                    style={{ fontWeight: 600 }}
+                  >
+                    Aperion | {prog.name}
+                  </h3>
+                  <p className="text-[#4A4A4A]/60 text-[14px] leading-relaxed flex-grow">
+                    {prog.desc}
+                  </p>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
         </div>
       </section>
 

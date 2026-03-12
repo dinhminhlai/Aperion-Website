@@ -156,8 +156,8 @@ export default function ParentsPage() {
               className="text-white text-[42px] md:text-[64px] leading-[1.05] mb-6 max-w-[800px] mx-auto"
               style={{ fontWeight: 300, textShadow: "0 2px 20px rgba(0,0,0,0.3)" }}
             >
-              Your student is about to make decisions that shape the next
-              decade. Here&rsquo;s what we do about it.
+              Your student is making decisions that will shape the next decade.
+              Aperion gives them real exposure to help inform those decisions.
             </h1>
           </FadeIn>
           <FadeIn onLoad delay={0.2}>
@@ -165,9 +165,11 @@ export default function ParentsPage() {
               className="text-white/90 text-[17px] leading-relaxed max-w-[640px] mx-auto mb-10"
               style={{ textShadow: "0 1px 8px rgba(0,0,0,0.2)" }}
             >
-              Aperion places high school students inside real institutions
-              alongside real professionals — at the exact moment they&rsquo;re
-              choosing courses, colleges, and futures.
+              Aperion is an immersive career discovery program that places high
+              school students inside real institutions — alongside the
+              professionals who work there. Teacher-led, curriculum-integrated,
+              and built around the moment your student is choosing courses,
+              colleges, and futures.
             </p>
           </FadeIn>
           <FadeIn onLoad delay={0.3}>

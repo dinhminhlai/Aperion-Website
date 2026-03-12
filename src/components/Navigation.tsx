@@ -125,14 +125,30 @@ export default function Navigation() {
                           Washington D.C.
                         </span>
                       </Link>
-                      <div className="px-4 py-3 rounded-md cursor-default">
-                        <span className="text-white/40 text-[14px] flex items-center gap-2 whitespace-nowrap" style={{ fontWeight: 500 }}>
-                          Technology &amp; Entrepreneurship
-                          <span className="text-[10px] px-2 py-0.5 rounded-full" style={{ background: "rgba(255,255,255,0.15)", color: "rgba(255,255,255,0.5)", fontWeight: 500 }}>
-                            Coming Soon
-                          </span>
+
+                      <div className="px-4 pt-4 pb-2">
+                        <span className="text-[10px] tracking-[0.2em] text-[#1A9E96]" style={{ fontWeight: 500 }}>
+                          IN DEVELOPMENT
                         </span>
                       </div>
+
+                      {[
+                        { name: "Technology & Entrepreneurship", city: "San Francisco" },
+                        { name: "Global Finance & Development", city: "New York" },
+                        { name: "Energy & AI Infrastructure", city: "Houston" },
+                        { name: "Biotech & Health Innovation", city: "Boston" },
+                        { name: "Space & Aerospace", city: "Los Angeles" },
+                        { name: "Climate & Sustainability", city: "Denver" },
+                      ].map((prog) => (
+                        <div key={prog.name} className="px-4 py-2 cursor-default">
+                          <span className="text-white/40 text-[14px] block" style={{ fontWeight: 500 }}>
+                            {prog.name}
+                          </span>
+                          <span className="text-white/30 text-[13px]">
+                            {prog.city}
+                          </span>
+                        </div>
+                      ))}
                     </div>
                   </motion.div>
                 )}
@@ -249,12 +265,24 @@ export default function Navigation() {
                           Global Affairs
                           <span className="text-white/40 text-[13px] ml-2">Washington D.C.</span>
                         </Link>
-                        <span className="text-[15px] text-white/40 flex items-center gap-2">
-                          Technology &amp; Entrepreneurship
-                          <span className="text-[10px] text-white bg-[#1A9E96] px-2 py-0.5 rounded-full" style={{ fontWeight: 500 }}>
-                            Coming Soon
-                          </span>
+
+                        <span className="text-[10px] tracking-[0.2em] text-[#1A9E96] pt-1" style={{ fontWeight: 500 }}>
+                          IN DEVELOPMENT
                         </span>
+
+                        {[
+                          { name: "Technology & Entrepreneurship", city: "San Francisco" },
+                          { name: "Global Finance & Development", city: "New York" },
+                          { name: "Energy & AI Infrastructure", city: "Houston" },
+                          { name: "Biotech & Health Innovation", city: "Boston" },
+                          { name: "Space & Aerospace", city: "Los Angeles" },
+                          { name: "Climate & Sustainability", city: "Denver" },
+                        ].map((prog) => (
+                          <span key={prog.name} className="text-[15px] text-white/40">
+                            {prog.name}
+                            <span className="text-white/30 text-[13px] ml-2">{prog.city}</span>
+                          </span>
+                        ))}
                       </div>
                     </motion.div>
                   )}

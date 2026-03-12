@@ -185,8 +185,8 @@ export default function GlobalAffairsPage() {
               className="text-[16px] leading-relaxed mb-10 max-w-[560px]"
               style={{ color: "rgba(255,255,255,0.8)", textShadow: "0 1px 4px rgba(0,0,0,0.4)" }}
             >
-              Three tracks. Real institutions. The professionals who shape
-              global events — and the students ready to meet them.
+              Three cohort tracks. Real institutions. The professionals who
+              shape global events — and the students ready to meet them.
             </p>
           </FadeIn>
 
@@ -424,7 +424,7 @@ export default function GlobalAffairsPage() {
               className="text-white text-[36px] md:text-[48px] leading-tight mb-4"
               style={{ fontWeight: 300 }}
             >
-              Seven nights. Six days. One city that changes everything.
+              Seven nights. Six days. One city where the work concentrates.
             </h2>
             <p className="text-white/60 text-[16px] mb-16 max-w-[720px]">
               The week is structured around three types of experiences — track

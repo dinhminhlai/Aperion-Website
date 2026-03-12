@@ -33,14 +33,19 @@ export default function Footer() {
                 </Link>
                 <span className="text-[12px] text-white/40 ml-1.5">Washington D.C.</span>
               </li>
-              <li className="flex items-center gap-2 flex-nowrap whitespace-nowrap">
-                <span className="text-[14px] text-white/40">
-                  Technology &amp; Entrepreneurship
-                </span>
-                <span className="text-[10px] px-2 py-0.5 rounded-full shrink-0 whitespace-nowrap" style={{ background: "rgba(255,255,255,0.15)", color: "rgba(255,255,255,0.5)", fontWeight: 500 }}>
-                  Coming Soon
-                </span>
-              </li>
+              {[
+                { name: "Technology & Entrepreneurship", city: "San Francisco" },
+                { name: "Global Finance & Development", city: "New York" },
+                { name: "Energy & AI Infrastructure", city: "Houston" },
+                { name: "Biotech & Health Innovation", city: "Boston" },
+                { name: "Space & Aerospace", city: "Los Angeles" },
+                { name: "Climate & Sustainability", city: "Denver" },
+              ].map((prog) => (
+                <li key={prog.name}>
+                  <span className="text-[14px] text-white/40">{prog.name}</span>
+                  <span className="text-[12px] text-white/30 ml-1.5">{prog.city}</span>
+                </li>
+              ))}
             </ul>
           </div>
 

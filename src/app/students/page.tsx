@@ -77,8 +77,8 @@ export default function StudentsPage() {
               The system wasn&rsquo;t built to show you what&rsquo;s out there.
             </h2>
             <p className="text-[#4A4A4A] text-[17px] leading-relaxed max-w-[680px] mb-16">
-              No section is failing you. But none of them can give you what you
-              actually need.
+              No one is failing you. But there are doors the system
+              wasn&rsquo;t built to open.
             </p>
           </FadeIn>
 
@@ -306,12 +306,11 @@ export default function StudentsPage() {
                 doesn&rsquo;t fit.
               </p>
               <p className="text-white/80 text-[16px] leading-relaxed">
-                The students who arrive at college with clarity — who know why
-                they&rsquo;re studying what they&rsquo;re studying — get more
-                from it. They choose better courses, pursue more meaningful
-                extracurriculars, and write college essays that don&rsquo;t sound
-                like everyone else&rsquo;s. Aperion is how you build that
-                clarity. Earlier. When it still changes the plan.
+                Students who arrive at college knowing why they chose their path
+                get more from it — better courses, more meaningful
+                extracurriculars, and college essays written from genuine
+                conviction, not fabricated interest. Aperion builds that clarity
+                earlier — while the plan is still forming.
               </p>
             </div>
             <div className="w-16 h-[2px] bg-[#1A9E96] mx-auto mt-12" />

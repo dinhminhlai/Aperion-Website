@@ -31,7 +31,7 @@ export default function Home() {
               className="text-[#1A9E96] text-[12px] md:text-[13px] tracking-[0.2em] mb-8"
               style={{ fontWeight: 500, textShadow: "0 1px 4px rgba(0,0,0,0.5)" }}
             >
-              WASHINGTON D.C. &nbsp;|&nbsp; JUNE 7&ndash;13, 2026
+              IMMERSIVE CAREER DISCOVERY
             </p>
           </FadeIn>
 
@@ -60,12 +60,11 @@ export default function Home() {
               className="text-[16px] md:text-[17px] leading-relaxed max-w-[600px] mx-auto mb-10"
               style={{ color: "rgba(255,255,255,0.95)", textShadow: "0 1px 4px rgba(0,0,0,0.5)" }}
             >
-              We place high school students inside real institutions — alongside
-              the professionals doing the work. Not simulations. Not campus
-              visits. The actual rooms where consequential work happens. Students
-              leave with wider horizons, sharper questions, and clarity about
-              what&rsquo;s possible — discovered alongside a peer cohort
-              navigating the same journey.
+              We place high school students inside the real institutions of a
+              professional field — alongside the practitioners who work there.
+              Teacher-led. Curriculum-integrated. Not simulations. Not campus
+              visits. The rooms where consequential work happens — discovered
+              alongside a peer cohort navigating the same journey.
             </p>
           </FadeIn>
 
@@ -124,11 +123,12 @@ export default function Home() {
               <p className="text-[16px] md:text-[17px] text-[#4A4A4A] leading-relaxed mb-8">
                 The rest come from television and social media. From this narrow
                 window, students choose courses, build college applications, and
-                commit to directions that will shape the next decade of their
-                lives. 90% of students want more career exploration. Only 39%
-                have access to any meaningful program at all — and the programs
-                that exist provide information, not experience. Aperion changes
-                the equation.
+                commit to directions that shape the next decade of their
+                lives. The consequences are measurable: 83% of graduates lack
+                confidence in their career direction. 90% of students want more
+                career exploration — only 39% have access to any meaningful
+                program at all. And the programs that exist provide information,
+                not experience. Aperion changes the equation.
               </p>
             </FadeIn>
             <FadeIn delay={0.3}>
@@ -210,15 +210,15 @@ export default function Home() {
                   03
                 </span>
                 <h3 className="text-white text-[20px] font-semibold mb-3">
-                  You Don&rsquo;t Go Alone
+                  No One Goes Alone
                 </h3>
                 <p className="text-white/70 text-[15px] leading-relaxed">
-                  Aperion is a teacher-led experience built around the peer
-                  cohort. Your own teacher guides the program — someone who knows
-                  you, your strengths, and your goals. You explore alongside peers
-                  in the same season of life, navigating the same uncertainty and
-                  asking the same big questions. Shared discovery makes the
-                  experience social, not solitary.
+                  Aperion is teacher-led and cohort-based. Students travel with
+                  their own teacher — someone who knows them, their strengths,
+                  and their goals — and alongside peers navigating the same
+                  questions about direction and identity. The teacher bridges
+                  inspiration and action. The cohort makes discovery social, not
+                  solitary.
                 </p>
               </div>
             </StaggerItem>
@@ -240,7 +240,7 @@ export default function Home() {
               className="text-[#1A1A1A] text-[36px] md:text-[48px] leading-tight mb-4"
               style={{ fontWeight: 300 }}
             >
-              Now Taking Applications
+              The Inaugural Program
             </h2>
             <p className="text-[#4A4A4A] text-[16px] mb-16 max-w-[640px]">
               Our inaugural program explores the world of international affairs
