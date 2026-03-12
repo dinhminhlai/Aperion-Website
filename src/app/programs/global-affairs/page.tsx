@@ -574,7 +574,7 @@ export default function GlobalAffairsPage() {
             </p>
             <Link
               href="/about"
-              className="text-[#1A9E96] text-[14px]"
+              className="rounded-full bg-[#1A9E96] px-8 py-3 text-[14px] text-white hover:bg-[#178a83] transition-colors inline-block"
               style={{ fontWeight: 500 }}
             >
               Learn more about the founders &rarr;

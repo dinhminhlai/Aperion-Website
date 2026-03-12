@@ -503,12 +503,13 @@ export default function ProgramsPage() {
           <FadeIn className="mb-8">
             <div className="bg-white border border-black/[0.08] rounded-lg p-8 lg:p-10 border-l-[4px] border-l-[#4A6D8C]">
               <div className="flex flex-wrap items-center gap-3 mb-4">
-                <span
+                <Link
+                  href="/apply"
                   className="text-[11px] text-white bg-[#1A9E96] px-3 py-1 rounded-full"
                   style={{ fontWeight: 500 }}
                 >
                   NOW ENROLLING
-                </span>
+                </Link>
                 <span className="text-[13px] text-[#4A4A4A]">
                   Washington D.C.
                 </span>
@@ -533,7 +534,7 @@ export default function ProgramsPage() {
               </p>
               <Link
                 href="/programs/global-affairs"
-                className="text-[#1A9E96] text-[14px]"
+                className="rounded-full bg-[#1A9E96] px-8 py-3 text-[14px] text-white hover:bg-[#178a83] transition-colors inline-block"
                 style={{ fontWeight: 500 }}
               >
                 Explore the Program &rarr;
