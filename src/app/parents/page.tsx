@@ -575,8 +575,8 @@ export default function ParentsPage() {
             <p className="text-center mt-12">
               <Link
                 href="/about"
-                className="text-[#1A9E96] text-[16px] leading-relaxed italic hover:underline"
-                style={{ fontFamily: "var(--font-lora), serif" }}
+                className="rounded-full bg-[#1A9E96] px-8 py-3 text-[14px] text-white hover:bg-[#178a83] transition-colors inline-block"
+                style={{ fontWeight: 500 }}
               >
                 More on the founding story &rarr;
               </Link>
